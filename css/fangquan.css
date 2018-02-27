@@ -1,0 +1,114 @@
+	.navbar-default{
+		background-color:aliceblue;
+		position: sticky;
+		z-index: 2;
+		top: 0;
+		width:100%;
+	}
+	.backgroundcolor-grey{
+		background-color:#e6e6e6;
+	}
+	
+	.navbar-default .dropdown-menu li{
+    z-index: 2;
+	}
+	
+	/* 关于nav-bar的一些调整 */
+    .dropdown:hover .dropdown-menu{
+    		display: block;
+		}
+		
+	  .dropdown:hover {
+		  color:yellow;
+	  }
+	  
+	  a:hover{
+		  color:yellow;
+	  }
+	  
+	  .col-lg-4:hover{
+			box-shadow: 0px 0px 15px 0px #000000;
+    		z-index: 2;
+    		transform: scale(1.0);
+	  }
+	  
+	  .navImage{  
+	  	max-width:200px;
+	  }
+	  @media only screen and (min-width: 600px){
+		.navImage{  
+	  		max-width:300px;
+	  	}
+	  }
+	  /*PC screen*/
+	  @media only screen and (min-width: 768px){
+		.navImage{  
+	  		max-width:400px;
+	  	}
+	  }
+  
+  /* 每个部分的page-header 字体做到responsive的效果 */
+  	.page-header h2{
+		font-size: 6vw;
+	}
+  	.teams p{
+		font-size: 1vw;
+	}
+	/* 团队，客户，博客的字体也相应调整  */
+	blockquote div p{
+		font-size: 1vw;
+		}
+	blockquote small{
+		font-size: 1vw;
+		}
+	.ourBlog p{	
+		font-size:1vw;
+	}
+  .contact-details {
+    font-size: 1vw;
+  }
+	/* 用Media query处理团队的图案 */
+	.ourTeam{
+			max-width: 60px;
+			height: auto;
+	}
+	.ourClient{
+			max-width: 40px;
+			height: auto;
+	}
+	
+	.ourBlogIcon{
+			max-width: 80px;
+			height: auto;
+	}
+	
+	/*tablet*/
+	@media only screen and (min-width: 600px){
+		.ourTeam{
+			max-width: 100px;
+			height: auto;
+		}
+		.ourClient{
+			max-width: 80px;
+			height: auto;
+		}
+		.ourBlogIcon{
+			max-width: 160px;
+			height: auto;
+		}
+	}
+	/*PC screen*/
+	@media only screen and (min-width: 768px){
+		.ourTeam{
+			max-width: 140px;
+			height: auto;
+		}
+		.ourClient {
+			max-width: 100px;
+			height: auto;
+		}
+		.ourBlogIcon{
+			max-width: 200px;
+			height: auto;
+	}
+	}
