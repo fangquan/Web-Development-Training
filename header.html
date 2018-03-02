@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<a href="http://www.google.com">click here for google</a>
+</body>
+</html>
+
+<!-- 一下内容放在index.html里面，用来调用header.html和footer.html-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美国本科转学</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+<div id="header"></div>
+<!--Remaining section-->
+<div id="footer"></div>
+</body>
+</html>
