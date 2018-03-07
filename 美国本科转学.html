@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>美国本科申请</title>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <!-- Bootstrap -->
@@ -67,7 +70,7 @@ $(function(){
 	</div>
 	<div class="row">
 		<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%">服务流程</h2>
-		<img src="images/服务流程导图3.png" class="img-responsive" style="margin-left: auto; margin-right: auto">
+		<img src="images/思维导图-01-01.jpg" class="img-responsive" style="margin-left: auto; margin-right: auto">
 		<h4 style="margin-left: 10%; margin-right: 10%">美国社区大学升学，本科转学需要准备什么材料？ 很多大学的转学录取率高于大学新生申请的录取率，但是需要准备比新生申请更多的申请材料。如何保持有竞争力的GPA，通过出色的课外活动丰富自己的简历； 与教授互动进入实验室参与科研项目，从而获得强有力的推荐信；如何在有限的时间内提高标准化考试的成绩。这些都是美国本科转学过程中面临的问题。如果把握好每一个环节，在众多的申请者中脱颖而出？让纽菲尔德的老师来帮助你吧！</h4>
 	</div>
 	
@@ -110,9 +113,10 @@ $(function(){
 		<h2 style="color: #44c477">留下联系方式，立即开始转学咨询！</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
     		<form action="email.php" method="post" target="_blank" style="margin-top: 5%;margin-bottom: 2%">
-		        <input id="firstname" name="firstname" value="姓名" type="text" style="font-size: 1vw">
-        		<input id="email" name="email" value="email" type="email" style="font-size: 1vw">
-		        <input id="phone" name="phone" value="电话/微信(必填)" type="tel" style="font-size: 1vw">
+		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
+        		<input id="email"  name="email" placeholder="email" type="email" style="font-size: 1vw">
+		        <input id="phone"  name="phone" placeholder="电话(必填)" type="tel" style="font-size: 1vw" required>
+		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
         		<br><br>
         		<input type="submit" value="发送" class="btn-success">
 		  </form>
@@ -215,8 +219,6 @@ for (i = 0; i < coll.length; i++) {
 	</script>
 	
 </div>	
-	
-
 <div id="footer"></div>
 </body>
 </html>
