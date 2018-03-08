@@ -112,13 +112,14 @@ $(function(){
 		<div align="left" style="margin-right: 20%; border-width:1px; border-color:#dedede; border-style:solid; padding:2%; border-radius:0px">
 		<h2 style="color: #44c477">留下联系方式，立即开始转学咨询！</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
-    		<form action="email.php" method="post" target="_blank" style="margin-top: 5%;margin-bottom: 2%">
+    		<form action="email.php" method="post" target="hidden-form" style="margin-top: 5%;margin-bottom: 2%">
 		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
-        		<input id="email"  name="email" placeholder="email" type="email" style="font-size: 1vw">
-		        <input id="phone"  name="phone" placeholder="电话(必填)" type="tel" style="font-size: 1vw" required>
+        		<input id="email"  name="email" placeholder="email(必填)" type="email" style="font-size: 1vw" required>
+		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" style="font-size: 1vw" required>
 		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
         		<br><br>
         		<input type="submit" value="发送" class="btn-success">
+				<iframe style="display:block; border:none; height: 30px" name="hidden-form">Thank you! We will contact you soon!</iframe> 
 		  </form>
 	  </div>
 	</div>
