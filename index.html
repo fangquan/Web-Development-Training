@@ -31,72 +31,21 @@
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.slider.min.js"></script>
-	
+<script> 
+$(function(){
+  $("#header").load("header.html");
+  $("#mentor").load("mentor.html");
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-
-  <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="#" ><img src="images/WechatIMG97.png" alt="" class="img-rounded img-responsive navImage"/></a> 
-	 </div>
-    
-    <!-- dropdown on hover -->
-    <!-- 屏幕缩小的时候navbar可以collapse -->
-    <div class="collapse navbar-collapse" id="myNavbar">
-
-      <ul class="nav navbar-nav navbar-right">
-		  <li class="dropdown"> 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">高端申请室<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-			        <li><a href="#">美国高中申请</a> </li>
-              <li><a href="#">Top50大学本科申请</a> </li>
-              <li><a href="美国研究生申请.html">研究生申请</a> </li>
-          </ul>
-      </li>
-		  
-		  <li class="dropdown"> 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">美国转学<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="社区大学转学.html">社区大学转学</a> </li>
-            <li><a href="美国本科转学.html">美国本科转学</a> </li>
-            <li><a href="#">中国本科转学</a> </li>
-          </ul>
-      </li> 
-		  
-      <li class="dropdown"> 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">紧急应对中心<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">美国高中开除应对</a> </li>
-            <li><a href="#">美国大学开除应对</a> </li>
-            <li><a href="#">F1签证辅导</a></li>
-          </ul>
-      </li>	  
-		
-		<li class="dropdown"> 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">关于我们</a> </li>
-            <li><a href="#">我们的团队</a> </li>
-            <li><a href="#">联系我们</a> </li>
-          </ul>
-    </li>
-    </ul>
-  </div>
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
+<div id="header"></div>
 	
 <!-- HEADER -->
 
-<header>
+<section>
 <div class="w3-display-container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -146,7 +95,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-</header>
+</section>
 <!-- / HEADER --> 
 <!--  SECTION-1 -->
 
@@ -180,7 +129,7 @@ function showDivs(n) {
 	</div>
 
   </div>	
-	
+
   <!-- 团队 -->
   <section class="backgroundcolor-grey">
   <div class="container">
@@ -191,110 +140,7 @@ function showDivs(n) {
 		  <span class="glyphicon glyphicon-thumbs-up" style="font-size: 2.5em"></span>
     </div>
    
-    <div class="row">
-	  <div class="teams w3-animate-right">
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Lina Rainone.jpg" data-holder-rendered="true">
-        <h3>Lina</h3>
-        <p align="center">
-			芝加哥大学<br/>
-			文学院荣誉学位<br/>
-			4年美国顶级大学申请辅导经验<br/>
-		</p> 
-	  </div>
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Mary Hurley .jpg" data-holder-rendered="true">
-        <h3>Mary</h3>
-        <p align="center">
-			范德堡大学<br/>
-本科招生办现任面试官<br/>
-哈佛大学商业分析硕士<br/>
-《波士顿》杂志运营官<br/>
-		</p>
-      </div>
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Melissa Wright .jpg" data-holder-rendered="true">
-        <h3>Melissa</h3>
-        <p align="center">	马里兰大学Park分校<br/>
-			本科招生办前任招生专员<br/>
-			普利斯顿大学政治学本科<br/>
-			11年美国大学申请辅导经验<br/>
-		</p>
-      </div>
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Natasha Mitchell.jpg" data-holder-rendered="true">
-        <h3>Natasha</h3>
-        <p align="center">	波士顿大学<br/>
-			本科招生办前任招生专员<br/>
-			惠罗克学院教育专业教员<br/>
-			《School the World》研究员<br/>
-		</p>
-      </div>
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Robert Murray .jpg" data-holder-rendered="true">
-        <h3>Robert</h3>
-        <p align="center">
-			哥伦比亚大学<br/>
-			《波士顿环球报》前任编辑<br/>
-			哥伦比亚大学创意写作硕士<br/>
-			圣十字学院英语专业本科<br/>
-		</p>
-      </div>
-	  <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Pegula Pryor .jpg" data-holder-rendered="true">
-        <h3>Pegula</h3>
-        <p align="center">	哈佛大学<br/>
-			本科招生办现任面试官<br/>
-			美国高等教育委员会调研员<br/>
-			波士顿教育局前官员<br/>
-		</p>
-      </div>
-	   </div>
-	  <div class="teams w3-animate-right">
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"> <img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/ALAN Emmet .jpg" data-holder-rendered="true">
-        <h3>Alan</h3>
-        <p align="center">哈佛大学<br/>
-			哈佛大学政治学博士<br/>
-			哥伦比亚大学创意写作本科<br/>
-			15年美国TOP50大学申请辅导经验<br/>
-	    </p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Amy Bobeda.jpg" data-holder-rendered="true">
-        <h3>Amy</h3>
-        <p align="center">
-			加州大学伯克利分校<br/>
-			英语创意写作专业硕士<br/>
-			“大学申请”畅销书《25 Months Until College》作者<br/>
-	    </p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Chris Congdon.jpg" data-holder-rendered="true">
-		  <h3>Chris</h3>
-        <p align="center">
-			哥伦比亚大学<br/>
-美国语言与文学专业本科<br/>
-连续4年荣登院长名单<br/>
-6年美国顶级大学申请辅导经验<br/>
-	    </p>
-	  </div>
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Kevin Trudel.jpg" data-holder-rendered="true">
-        <h3>Kevin</h3>
-        <p>	加州大学伯克利分校<br/>
-			本科招生办前任招生专员<br/>
-			格林内尔学院政治学专业<br/>
-		</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Lina Daoud.jpg" data-holder-rendered="true">
-        <h3>Lina</h3>
-        <p align="center">	
-			芝加哥大学<br/>
-			文学院荣誉学位<br/>
-			4年美国顶级大学申请辅导经验<br/>
-		</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-xs-4 text-center"><img class="img-circle ourTeam" alt="140x140"  src="我们的团队照片/Sasha Carter.jpg" data-holder-rendered="true">
-        <h3>Sasha</h3>
-        <p align="center">	哥伦比亚大学<br/>
-			英语创业写作硕士<br/>
-			德克萨斯大学专业写作导师<br/>
-			5年美国顶级大学申请辅导经验<br/>
-		</p>
-      </div>
-	  </div>
-    </div>
+	<div id="mentor"></div>
   </div>
   </section>
   <script>
@@ -469,65 +315,7 @@ function carousel2() {
 </section>
 
 <!-- FOOTER -->
-<footer class="text-left backgroundcolor-grey" style="margin-top: 15px">
-	<!-- Contacts -->
-	<div class="container">
-        	<div class="row">
-            <div class="col-xs-4">
-                    <div class="widget-title">
-                        <h4>About NFE Education</h4>
-                    </div>
-                    <ul class="contact-details">
-                        <li>
-                            <a href="http://meliuxue.com/statistics">About Us</a>
-                        </li>
-                        <li>
-                            <a href="http://form.mikecrm.com/bGTzlc" target="_blank">Campus Ambassador</a>
-                        </li>
-                        <li>
-                            <a href="http://meliuxue.com/officialCooperation">Business Cooperation</a>
-                        </li>
-                        <li>
-                            <a href="http://meliuxue.com/privacy">Terms of Service and Privacy</a>
-                        </li>
-                    </ul>
-
-                </div>
-         					
-            <div class="col-xs-4">
-                    <div class="widget-title">
-                        <h4>Contact Us</h4>
-                    </div>
-                    <ul class="contact-details">
-                    <ul>
-                        <li>U.S. +1-857-756-3230</li>
-                        <li>China 0532-81700747</li>
-                        <li>Email <a href="mailto:info@nfeus.com">info@nfeus.com</a></li>       
-                    </ul>
-                    </ul>
-            </div>
-				
-			<div class="col-xs-4">
-                    <ul style="list-style-type:none">
-                        <li style="margin-top: 10%">
-	                        		<img src="./images/WechatIMG312.png" alt="" style="max-width: 60%;">
-	                    </li>
-                    </ul>
-        </div>
-        <!-- end row -->
-    	</div>	
-	</div>
-	
-  	<!-- All rights -->
-	<div class="container text-center">
-    <div class="row">
-      <div class="col-xs-12">
-		<p>浙ICP备16022244号</p>
-        <p>Copyright © New Fields International Education. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<div id="footer"></div>
 <!-- / FOOTER --> 
 	
 <!-- Chatter -->
