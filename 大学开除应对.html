@@ -154,6 +154,7 @@ $(function(){
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+			font-size: 1vw;
 		}
 		
 		.warnings hr {
@@ -164,7 +165,7 @@ $(function(){
 			background-color: black;
 		}
 	</style>
-<div class="text-center">
+<div class="text-center" style="margin-top: 5%">
 <h2>美国学校四大处分级别</h2>
 <hr style="width: 20%; margin-left: auto; margin-right: auto; height: 2px; background-color: #9DB7FF">
 <div class="row warnings" style="font-size: 1vw; line-height: 2">
@@ -191,7 +192,7 @@ $(function(){
 			<p>学术违纪行为非常严重，学校直接开除学生。开除的决定通常是永久性的，可以申诉的几率很小。成绩单上将会永久保留“开除”的记录。</p>
 			<hr>
 			<p>撰写高质量申诉信，找到合理的理由辩驳以争取机会。同时做好转学准备，进入纽菲尔德的合作院校继续学习。</p>
-		</div>		
+	</div>
 </div>
 </div>
 
@@ -233,11 +234,16 @@ $(function(){
 	width: 70%; 
 	margin-left: auto;
 	margin-right: auto;
-}	
+	font-size: 1.5vw;
+}
+
+.tabcontent li{
+	margin: 5px 0;
+}
 </style>
-<div class="text-center">
+<div class="text-center" style="margin-top: 5%">
 <h2>学术紧急情况，我们保驾护航</h2>
-</div>
+<hr style="width: 20%; margin-left: auto; margin-right: auto; height: 2px; background-color: #9DB7FF">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Appeal')" id="defaultOpen">申诉服务</button>
   <button class="tablinks" onclick="openCity(event, 'Anchor')">紧急转学</button>
@@ -245,9 +251,10 @@ $(function(){
   <button class="tablinks" onclick="openCity(event, 'Transfer')">二次转学</button>
   <button class="tablinks" onclick="openCity(event, 'Visa')">签证辅导</button>
 </div>
-
 <div id="Appeal" class="tabcontent">
   <hr>
+  <table>
+  <th width="50%">
   <ul>
 	<li>1000+例成功申诉，业界经验最多</li>
 	<li>精通各学校申诉流程、处理周期和决策依据</li>
@@ -255,10 +262,14 @@ $(function(){
 	<li>模拟听证会现场、模拟学校老师约谈</li>
 	<li>最大程度减轻开除/退学/警告处分</li>  
   </ul>
+  </th>
+  <th width="50%">  <img src="images/appealLetterService-min.jpg"></th>
+  </table>
 </div>
-
 <div id="Anchor" class="tabcontent">
   <hr>
+  <table>
+  <th width="50%">
   <ul>
 	<li>大学本科、研究生、高中紧急转学</li>
 	<li>100%成功率，最快4小时录取</li>
@@ -266,42 +277,57 @@ $(function(){
 	<li>转入学校正规，均由中美教育部认证</li>
 	<li>本科7个工作日内保证录取</li>  
   </ul>
+  </th>
+  <th width="50%"><img src="images/emergencyservices-min.jpg"></th>
+  </table>
 </div>
-
 <div id="Status" class="tabcontent">
   <hr>
+  <table>
+  <th width="50%">
 	<ul>
-	<li>1,800+成功案例，100%恢复学生身份</li>
+	<li>1200+成功案例，100%恢复学生身份</li>
 	<li>最长F1学生身份失效/过期10个月</li>
 	<li>资深教育专家组成的高端团队</li>
-	<li>精通F1学生身份激活的详细规定&流程</li>
+	<li>精通F1学生身份激活的详细规定流程</li>
 	<li>深谙如何与移民局沟通，经验丰富</li>
 	</ul>
+</th>
+<th width="50%"><img src="images/status1-1-min.jpg"></th>
+</table>
 </div>
-	
 <div id="Transfer" class="tabcontent">
   <hr>
+  <table>
+  <th width="50%">
 	<ul>
-	<li>100%转学成功，92%回原校或更高名校</li>
+	<li>100%转学成功，92%回原校或更好</li>
 	<li>专属学术导师一对一辅导，有效提高GPA</li>
 	<li>量身打造背景提升，抵消开除负面影响</li>
 	<li>合理解释开除经历</li>
 	<li>从哪里跌倒，就从哪里站起来！</li>
 	</ul>
+  </th>
+  <th width="50%"><img src="images/transferservice-min.jpg">
+  </th>
+</table>
 </div>
-
 <div id="Visa" class="tabcontent">
   <hr>
+  <table>
+  <th width="50%">
 	<ul>
- 	<li>700多例疑难签证，业界经验最多</li>
- 	<li>99.7%成功率，全国最强签证专家</li>
+ 	<li>700多例疑难签证，95%成功率，业界经验最多</li>
  	<li>模拟面签，准确预测签证官质疑问题</li>
  	<li>针对开除记录、拒签史有独到经验</li>
  	<li>最多拒签8次 – 成功获签</li>
  	<li>最长逾期滞留25个月 – 成功获签</li>
 	</ul>
-</div>	
-	
+   </th>
+   <th width="50%"><img src="images/visa1-1-min.jpg">
+  </th>
+</table>
+</div>
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -319,6 +345,55 @@ function openCity(evt, cityName) {
 }
 document.getElementById("defaultOpen").click();
 </script>
+</div>
+
+<!-- 紧急处理步奏 -->
+<style>
+	.liucheng [class*="col-"]{
+		margin-top: 2%;
+	}
+
+</style>
+<div class="text-center" style="margin-top: 5%; background-color: #eee">
+<h2>学术紧急处理 服务流程</h2>
+<p style="color: gray">纽菲尔德专家团第一时间为你免费咨询，全力策划，渡过难关，重返校园！</p>
+<hr style="width: 20%; margin-left: auto; margin-right: auto; height: 2px; background-color: #9DB7FF">
+<div class="row liucheng" style="line-height: 2; width: 80%; margin-left: auto; margin-right: auto; text-align: left;">
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		1、咨询
+ 		<li>30分钟内回复，24*7不间断服务, 中美无时差。</li>
+ 		<li>导师第一时间在现场，提供解决方案，安抚学生情绪。</li>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		2、沟通
+		<li>与学校合理沟通，撰写申诉信，最大程度找到弥补方法。</li>
+		<li>据理力争，最大程度减轻开除/退学/警告处分。</li>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		3、转学
+		<li>量身定制转学方案，及时化解身份危机。</li>
+		<li>实现学术无缝衔接，保证在美继续学业。</li>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		4、身份
+ 		<li>精通F1学生签证重新激活的规定和操作。</li>
+ 		<li>拒绝暗箱操作身份挂靠，光明正大恢复学生身份。</li>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		5、签证
+		<li>签证团队专攻各种GPA低，学术不良等问题。</li>
+		<li>成功为拒签，非法滞留的学生，重新获得签证。</li>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4">
+		6、护学
+		<li>VIP学术保障计划，三对一学业辅导。</li>
+		<li>根据学生特点，打造后续学业规划，实现留学的价值。</li>
+	</div>
+</div>
+</div>
+<div class="text-center">
+	<img src="images/紧急服务流程图.png" alt="紧急服务流程图" style="margin-top: 2%" >
+</div>
 <div id="footer"></div>	
 </body>
 </html>
