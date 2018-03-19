@@ -60,6 +60,7 @@ $(function(){
 		background-image: url(images/aboutus-img1.jpg);
 		background-size: auto;
 		background-repeat: no-repeat;
+		background-attachment: scroll;
 		text-align: center;
 	}
 </style>
@@ -75,24 +76,104 @@ $(function(){
 </div>
 
 <style>
- width: 30%; 
-text-align: right"	
-
+	.left_col{
+		width: 30%;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.right_col{
+		width: 70%;
+		line-height: 25px;
+	}
 </style>
-<div class="row">
-	<table width="100%" border="1">
+<div class="row" style="background-color: #EDEDED">
+	<table width="80%" style="margin-left: auto; margin-right: auto">
     <tr>
       <td class="left_col">集团介绍</td>
-      <td style="width: 70%">美国厚仁教育集团 WholeRen, LLC 成立于2010年，旨在提供基于美国的全面教育与发展，为学生制定全方位的留学服务，包括美国初/高中留学申请和转学、美国本科/研究生申请和转学、学术紧急应对学术辅导、美国寄宿家庭服务、微留学、背景提升和职业规划等。厚仁教育是全美首家获得美国国际招生协会AIRC权威认证的留学服务机构，曾接受CCTV、纽约时报、华尔街日报等主流媒体特约专访，是最了解美中教育差异的专家，是指导留美学生成功的导师。</td>
+      <td class="right_col"> 纽菲尔德国际教育集团，2002年在新西兰成立。致力于为海外留学、工作、投资人士提供卓越的专业服务。经过十年的努力，集团已经在全球四大洲设立十余家分子公司，提供专业而可靠的海外高等教育、境外服务及移民投资咨询服务的一站式留学服务专业机构。其中澳洲公司、新西兰公司、加拿大公司已成为当地口碑盛佳的留学服务品牌。</td>
     </tr>
     <tr>
-      <td style="width: 30%; text-align: right">教育宗旨</td>
-      <td style="width: 70%">
-未来的领导力人才，一定是国际化的。厚仁教育的宗旨是，基于美国，并继承中国的文化内涵，通过专业的教育服务，培养全面的有健康人格的人才。让每一位留美学生都能通过教育而提升，是我们最大的心愿！</td>
+      <td class="left_col">教育宗旨</td>
+      <td class="right_col">
+未来的领导力人才，一定是国际化的。纽菲尔德（美国）的宗旨是，基于美国，立足美国，服务全球留学生。通过专业的教育服务，让每一位留美学生通过教育而提升，让留学有价值！</td>
     </tr>
 </table>
 </div>
+
+<div class="row" style="background-image: url(images/us_mapsmall-02-02.png); background-attachment: fixed; background-repeat: no-repeat">
+	<h4 style="text-align: center; width: 60%; margin-left: auto; margin-right: auto; margin-top: 200px; margin-bottom: 200px">New Field USA 位于美国<font color="red">最大</font>的教育集群地--波士顿</h4>
+</div>
+
+<style>
+	.our_service {
+		width: 60%;
+		margin-left: 40%;
+		margin-right: auto;
+		border-collapse: separate;
+		border-spacing: 50px;
+	}
 	
+	.our_service td{
+		width: 50%;
+		text-align: left;
+	}
+	
+	.our_service p{
+		font-size: 25px;
+	}
+	
+	.parent {
+		background-image: url(images/Service-bg-pen-07-4.png);
+		background-position:top left;
+		background-repeat: no-repeat;
+	}
+</style>
+<div class="parent">
+	<table class="our_service" style="background-color: #44c477; border-radius: 5px">
+    <tr>
+	<td> 
+	<p>美国高中申请</p>
+	低龄留学专家，纽菲尔德帮你进入最理想的学校<br>
+   	<a href="美国高中申请.html">了解更多</a>
+    </td>
+    <td> <p>美国大学申请</p>
+	量身地址，战略定位，完美文书，名校在敲门<br>
+    <a href="大学本科申请.html">了解更多</a>
+    </td>
+	</tr>
+    <tr>
+    <td> <p>研究生申请</p>
+	择校选专业与就业规划相结合，制定优势方案，学长美国，留在美国<br>
+    <a href="美国研究生申请.html">了解更多</a>    
+    </td>
+    <td> <p>社区大学申请</p>
+	社区大学的领跑者，2+2 社大/大U 模式的探索者<br>
+    <a href="社区大学转学.html">了解更多</a>
+    </td>
+    </tr>
+    <tr>
+	<td> <p>转学申请</p>
+	转学是为了更好的提升自己，实现留学价值<br>
+    <a href="社区大学转学.html">了解更多</a>
+    </td>
+    <td> <p>高考后留学</p>
+	高考失利不要紧，从留学开启人生第二次征途<br>
+	<a href="高考后留学.html">了解更多</a>
+    </td>
+    </tr>
+    <tr>
+    <td> <p>开除紧急应对</p>
+	提供最佳应对方案，回归学术正规，继续在美学业<br>
+	<a href="大学开除应对.html">了解更多</a>
+    </td>
+    <td> <p>夏令营</p>
+    暑期微留学、浸润式游学倡导者<br>
+	<a href="#">了解更多</a>    
+    </td>
+    </tr>
+</table>
+</div>
 <!-- FOOTER -->
 <div id="footer"></div>
                                
