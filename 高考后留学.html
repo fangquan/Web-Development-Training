@@ -51,22 +51,52 @@ $(function(){
 <body>
 <div id="header"></div>
 <style>
-/* Container holding the image and the text */
-.w3-display-container {
-    position: relative;
-    text-align: center;
-}
-/* Top left text */
-.top-right {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-	right: 10%;
-	color: white;
-}
+	/* Container holding the image and the text */
+	.w3-display-container {
+		position: relative;
+		text-align: center;
+	}
+	/* Top left text */
+	.top-right {
+		position: absolute;
+		top: 30px;
+		left: 10%;
+		right: 50%;
+		color: white;
+	}
+	
+	@media screen and (max-width: 600px){
+		.top-right {
+			position: absolute;
+			top: 6px;
+			left: 10%;
+			right: 50%;
+			color: white;
+		}
+		
+		.top-right h2{
+			display: none;
+		}
+		
+		.top-right p{
+			display: none;
+		}
+	}	
+	
+	.w3-display-container > img:first-of-type {
+		width: 100%;
+		filter: brightness(50%);
+	}
+	
+	@media screen and (max-width:600px){
+		.w3-display-container > img:first-of-type {
+			filter: brightness(100%);
+		}
+	}
+	
 </style>
 <div class="w3-display-container">
-	<img src="images/研究生申请banner-1500x430.jpg" class="img-responsive" alt="转学" style="width: 100%; filter: brightness(50%)">
+	<img src="images/研究生申请banner2-1500x430.jpg" class="img-responsive" alt="转学">
 	<div class="top-right" align="left">
   		<h2>高考、留学如何选择？</h2>
   		<p>高考成绩不理想一定要复读吗？ 来不及准备托福和SAT成绩，能不能直接出国读大学？</p>
@@ -75,10 +105,10 @@ $(function(){
 		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-primary" target="_blank">在线咨询</a> 
 	</div>
 	
-	<div class="row" style="background-color:white; margin-top: 10px">
+	<div class="row" style="background-color:white; margin-top: 10px; width: 80%; margin-left: 10%; margin-right: 10%">
 		<h3 style="text-align: center">十年寒窗苦读，千军万马独木桥还是柳暗花明又一村？</h3><br>
-		<p>脚下的路有千万条，高考不理想也不是世界末日</p><br>
-		<p>纽菲尔德来引领你，把握现在，开拓更加美好的未来！</p>
+		<p>脚下的路有千万条，高考不理想也不是世界末日</p>
+		<p>纽菲尔德引领你，把握现在，开拓更加美好的未来！</p>
 	</div>
 	<style>
 		.col-lg-4 p:hover{
@@ -100,21 +130,48 @@ $(function(){
 			border-radius: 10px;
 		}
 		
+		
+		@media screen and (max-width: 600px){
+			.col-lg-4 p {
+				font-size: 4vw;
+			}
+		
+			.col-lg-4 {
+				height: 260px;
+			}	
+		}
 	</style>
 	<div class="row">
 		<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%">家长感言</h2>
-		<div class="col-sm-4 col-md-4 col-lg-4" style="background-color:yellow">
+		<div class="col-sm-12 col-md-4 col-lg-4" style="background-color:yellow">
 			<p>"孩子在学习方面比较好强，高考失误后一度失去信心。一筹莫展的时候感谢纽菲尔德在孩子人生重要的转折点给出专业建议和辅导，她收到几所名校offer后兴奋了很久！是纽菲尔德让孩子少走了弯路，有了更多更好的选择"<br><br><i>杭州某家长</i></p>
 		</div>
-		<div class="col-sm-4 col-md-4 col-lg-4" style="background-color: lightblue">
+		<div class="col-sm-12 col-md-4 col-lg-4" style="background-color: lightblue">
 			<p>"特别感谢纽菲尔德老师的及时帮助！眼看孩子在高考压力之下的焦虑我也寝食难安。我相信美国教育能给孩子更大的发展空间，通过纽菲尔德申请了美国大学，为我们分担了压力。孩子出国之后，纽菲尔德会持续关注并且予以关怀，我们也就放心了！"<br><br><i>长沙某家长</i></p>
 		</div>
-		<div class="col-sm-4 col-md-4 col-lg-4" style="background-color: lightsalmon">
+		<div class="col-sm-12 col-md-4 col-lg-4" style="background-color: lightsalmon">
 			<p style="">"两年多来，看着我们的孩子一步步成长为自信满满的小伙子，从这座小城毕业出国，进入社区大学，到顺利成为美国名校前50的大学生，我们为他感到骄傲和自豪！感谢纽菲尔德！"<br><br><i>南京某家长</i></p>
 		</div>
 	</div>
 	
-	<div class="row" style="margin-top: 3%；border-width:1px; border-color:#dedede; border-style:solid;">
+	
+	<style>
+		
+		.col-sm-6.col-lg-8 input {
+				font-size: 1vw;	
+		}
+		
+		@media screen and (max-width: 600px){
+			.col-sm-6.col-lg-4 {
+				display: none;
+			}
+			
+			.col-sm-6.col-lg-8 input {
+				font-size: 5vw;	
+			}
+		}
+	</style>
+	<div class="row" style="margin-top: 3%；border-width:1px; border-color:#dedede; border-style:solid">
 	<div class="col-sm-6 col-lg-4">
 		<div align="left" style="margin-left: 20%; padding:2%; border-radius:0px">
 		<h2 style="color: #44c477">招生官免费评估</h2>
@@ -129,10 +186,10 @@ $(function(){
 		<h2 style="color: #44c477">留下联系方式，立即开始咨询</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
     		<form action="email.php" method="post" target="hidden-form" style="margin-top: 5%;margin-bottom: 2%">
-		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
-        		<input id="email"  name="email" placeholder="email(必填)" type="email" style="font-size: 1vw" required>
-		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" style="font-size: 1vw" required>
-		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
+		        <input id="firstname" name="firstname" placeholder="姓名" type="text">
+        		<input id="email"  name="email" placeholder="email(必填)" type="email" required>
+		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" required>
+		        <input id="wechat" name="wechat" placeholder="微信" type="tel">
         		<br><br>
         		<input type="submit" value="发送" class="btn-success">
 				<iframe style="display:block; border:none; height: 30px" name="hidden-form">Thank you! We will contact you soon!</iframe> 
@@ -144,14 +201,11 @@ $(function(){
 	
 	</style>
 	<div class="row">
-		<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%">没有语言成绩和SAT成绩，也能进入名校,点击咨询</h2>
+		<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%; width: 90%; margin-left: auto; margin-right: auto">没有语言成绩和SAT成绩，也能进入名校,点击咨询</h2>
 		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" target="_blank">
-			<img src="images/twoplans.png" class="image img-responsive btn btn-defaul" style="margin-left: auto; margin-right: auto" alt="two plans"> 
+			<img src="images/twoplans2.png" class="image img-responsive btn btn-defaul" style="margin-left: auto; margin-right: auto" alt="two plans">
 		</a>
 	</div>
-	
-  	
-
 <style>
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -166,7 +220,7 @@ $(function(){
   outline: none;
   font-size: 1vw;
 }
-
+	
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
   background-color: #ccc;
@@ -198,63 +252,110 @@ $(function(){
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-	}
-</style>
+}
 	
+	
+@media screen and (max-width: 600px){
+	.collapsible {
+	  font-size: 4vw;
+	}
+	
+	.collapsible:after {
+		content: ""; /* Unicode character for "plus" sign (+) */
+		font-size: 4vw;
+	}
+
+	.active:after {
+		content: ""; /* Unicode character for "minus" sign (-) */
+	}
+}
+
+	.col-xs-12.col-lg-6 > div:first-of-type {
+		margin-left:5%;
+	}
+
+	@media screen and (max-width: 600px){
+		.col-xs-12.col-lg-6 > div:first-of-type {
+			margin-left:0%;
+		}
+	}
+
+</style>
+
 <div class="row">
 	<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%">常见问题</h2>
-	<div class="col-xs-6 col-lg-6 ui-content" data-role="main">
-		<div style="margin-left:5%">
-		<button class="collapsible">高考失利会不会影响申请美国学校？</button>
-		<div class="content">
- 	 	<p>不需要。高考成绩好坏，对申请美国学校没有影响。</p>
-		</div>
-		<button class="collapsible">高考失利，复读一年行不行？</button>
-		<div class="content">
- 	 	<p>不建议复读。同样的知识内容，再花一整年的时间复习，还要面临一次高考的考验。对孩子心智打击大，对成长不利。最好能继续学业，平稳过渡到大学阶段。
+	<div class="col-xs-12 col-lg-6 ui-content" data-role="main">
+		<div>
+			<button class="collapsible">高考失利会不会影响申请美国学校？</button>
+			<div class="content">
+			<p>不需要。高考成绩好坏，对申请美国学校没有影响。</p>
+			</div>
+			<button class="collapsible">高考失利，复读一年行不行？</button>
+			<div class="content">
+			<p>不建议复读。同样的知识内容，再花一整年的时间复习，还要面临一次高考的考验。对孩子心智打击大，对成长不利。最好能继续学业，平稳过渡到大学阶段。
 
-不过，不同学生的情况不同，举例来说，一个对自己大学排名不满意的学生在大一就可以申请转学到其他学校。最佳时机就是你不满足现状，勇于追梦的那一刻！</p>
-		</div>
-		<button class="collapsible">去美国读大学，有哪些明显的好处？</button>
-		<div class="content">
- 	 	<p>第一，大环境好。美国多所大学全世界领先，是最好的教育环境，能培育全球化视野。
-		<br>
-		第二，英语进步快。学生英语交流和写作能力能在短期内接近最地道的表达。
-		<br>
-		第三，机会多。资源竞争不像国内那么激烈，学生有更多发展机会，也更容易取得成功</p>
-		</div>
-		<button class="collapsible">秋季开学的学校，现在还没有招满学生，是不是不太好的学校？</button>
-		<div class="content">
- 	 	<p>不是的。美国大学提供快速申请通道，预留名额，通过纽菲尔德面向中国招生，学校信息见合作学校列表，更具体的情况请咨询纽菲尔德顾问。</p>
-		</div>
+	不过，不同学生的情况不同，举例来说，一个对自己大学排名不满意的学生在大一就可以申请转学到其他学校。最佳时机就是你不满足现状，勇于追梦的那一刻！</p>
+			</div>
+			<button class="collapsible">去美国读大学，有哪些明显的好处？</button>
+			<div class="content">
+			<p>第一，大环境好。美国多所大学全世界领先，是最好的教育环境，能培育全球化视野。
+			<br>
+			第二，英语进步快。学生英语交流和写作能力能在短期内接近最地道的表达。
+			<br>
+			第三，机会多。资源竞争不像国内那么激烈，学生有更多发展机会，也更容易取得成功</p>
+			</div>
+			<button class="collapsible">秋季开学的学校，现在还没有招满学生，是不是不太好的学校？</button>
+			<div class="content">
+			<p>不是的。美国大学提供快速申请通道，预留名额，通过纽菲尔德面向中国招生，学校信息见合作学校列表，更具体的情况请咨询纽菲尔德顾问。</p>
+			</div>
 		</div>
 	</div>
-	<div class="col-xs-6 col-lg-6 ui-content" data-role="main">
-		<div style="margin-left:5%">
-		<button class="collapsible">A 计划说可以转学去那么顶尖的学校，是真的吗？</button>
-		<div class="content">
- 	 	<p>转学是美国教育体系非常成熟的模式。美国两任总统奥巴马和川普都是在大学期间转进常青藤的。每年有数万名美国本土学生转进顶尖名校。中国留学生也能以同等标准受益于转学</p>
-		</div>
-		<button class="collapsible">A 计划到时候转学不成功怎么办？</button>
-		<div class="content">
- 	 	<p>项目已成功招生运转4年，往届学生通过纽菲尔德都录取到美国前100的大学，转录成功率为100%。纽菲尔德为学生配备专业导师，一对一量身定制计划。只要学生下功夫学习，完成规划进度，我们就能保证转学成功。具体的退款承诺欢迎咨询纽菲尔德顾问。</p>
-		</div>
-			
-			<button class="collapsible">孩子到了美国，英语基础弱，学校跟不上怎么办？</button>
-		<div class="content">
- 	 	<p>我们的合作学校均提供英语强化班。在地道的美语环境中，学生通常都能很快弥补语言差距，适应课程节奏。如果需要，厚仁教育在美国各地均有办公室，可提供英语培训和学术辅导，有效帮助学生提高学习成绩，跟上进度。</p>
-		</div>
-			
-		</div>
-		
+	<div class="col-xs-12 col-lg-6 ui-content" data-role="main">
+		<div>
+			<button class="collapsible">A 计划说可以转学去那么顶尖的学校，是真的吗？</button>
+			<div class="content">
+			<p>转学是美国教育体系非常成熟的模式。美国两任总统奥巴马和川普都是在大学期间转进常青藤的。每年有数万名美国本土学生转进顶尖名校。中国留学生也能以同等标准受益于转学</p>
+			</div>
+			<button class="collapsible">A 计划到时候转学不成功怎么办？</button>
+			<div class="content">
+			<p>项目已成功招生运转4年，往届学生通过纽菲尔德都录取到美国前100的大学，转录成功率为100%。纽菲尔德为学生配备专业导师，一对一量身定制计划。只要学生下功夫学习，完成规划进度，我们就能保证转学成功。具体的退款承诺欢迎咨询纽菲尔德顾问。</p>
+			</div>
+
+				<button class="collapsible">孩子到了美国，英语基础弱，学校跟不上怎么办？</button>
+			<div class="content">
+			<p>我们的合作学校均提供英语强化班。在地道的美语环境中，学生通常都能很快弥补语言差距，适应课程节奏。如果需要，厚仁教育在美国各地均有办公室，可提供英语培训和学术辅导，有效帮助学生提高学习成绩，跟上进度。</p>
+			</div>
+		</div>	
 	</div>
 	</div>
 	
 	<div class="row" style="margin-top: 3%; margin-bottom: 3%"><a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-success" target="_blank"><em class="glyphicon glyphicon-search"> <strong>立即点击咨询</strong></em></a></div>	
 	
+	
+	<style>
+		.row.bottom-right {
+			color:white; 
+			position: relative; 
+			top: -300px; 
+			text-align: left; 
+			margin-left: 5%;	
+		}
+		
+		@media screen and (max-width: 600px){
+			.row.bottom-right {
+				display: none;
+			}
+			
+			.w3-display-container > img:last-of-type {
+				display: none;
+			}
+			
+		}
+		
+	</style>
 	<!-- 结尾的图片 -->
-	<img src="images/研究生申请banner-1500x430.jpg" class="img-responsive" style="width: 100%;filter: brightness(60%)" alt="底部">
-	<div class="row" style="color:white; position: relative; top: -300px; text-align: right; margin-right: 5%">
+	<img src="images/研究生申请banner2-1500x430.jpg" class="img-responsive" style="width: 100%;filter: brightness(60%)" alt="底部">
+	<div class="row bottom-right">
   		<h2>高考、留学如何选择？</h2>
   		<h4>纽菲尔德团队，为您一一解答。</h4>
 	</div>

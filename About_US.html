@@ -58,10 +58,25 @@ $(function(){
 	.first-image {
 		padding: 205px;
 		background-image: url(images/aboutus-img1.jpg);
-		background-size: auto;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		text-align: center;
+	}
+	
+	@media screen and (max-width: 600px){
+		.first-image{
+			padding: 40px;
+			background-attachment:fixed;
+		}
+
+		.first-image h1{
+			font-size: 7vw;
+		}
+		
+		.first-image h4{
+			display: none;
+		}	
 	}
 </style>
 <div class="first-image">
@@ -86,6 +101,20 @@ $(function(){
 		width: 70%;
 		line-height: 25px;
 	}
+	
+	@media screen and (max-width:600px){
+		.no-mobile {
+			display: none;
+		}
+		
+		.left_col{
+			width: 30%;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+	}
 </style>
 <div class="row" style="background-color: #EDEDED">
 	<table width="80%" style="margin-left: auto; margin-right: auto">
@@ -93,7 +122,7 @@ $(function(){
       <td class="left_col">集团介绍</td>
       <td class="right_col"> 纽菲尔德国际教育集团，2002年在新西兰成立。致力于为海外留学、工作、投资人士提供卓越的专业服务。经过十年的努力，集团已经在全球四大洲设立十余家分子公司，提供专业而可靠的海外高等教育、境外服务及移民投资咨询服务的一站式留学服务专业机构。其中澳洲公司、新西兰公司、加拿大公司已成为当地口碑盛佳的留学服务品牌。</td>
     </tr>
-    <tr>
+    <tr class="no-mobile">
       <td class="left_col">教育宗旨</td>
       <td class="right_col">
 未来的领导力人才，一定是国际化的。纽菲尔德（美国）的宗旨是，基于美国，立足美国，服务全球留学生。通过专业的教育服务，让每一位留美学生通过教育而提升，让留学有价值！</td>
@@ -101,7 +130,7 @@ $(function(){
 </table>
 </div>
 
-<div class="row" style="background-image: url(images/us_mapsmall-02-02.png); background-attachment: fixed; background-repeat: no-repeat">
+<div class="row" style="background-image: url(images/us_mapsmall-02-02.png); background-size: 100% auto;background-attachment: fixed; background-repeat: no-repeat">
 	<h4 style="text-align: center; width: 60%; margin-left: auto; margin-right: auto; margin-top: 200px; margin-bottom: 200px">New Field USA 位于美国<font color="red">最大</font>的教育集群地--波士顿</h4>
 </div>
 
@@ -128,6 +157,18 @@ $(function(){
 		background-position:top left;
 		background-repeat: no-repeat;
 	}
+	
+	@media screen and (max-width: 600px){
+		.our_service {
+			width: 100%;
+			margin-left: 0%;
+		}
+		
+		.our_service p{
+			font-size: 20px;
+		}
+	}
+	
 </style>
 <div class="parent">
 	<table class="our_service" style="background-color: #44c477; border-radius: 5px">

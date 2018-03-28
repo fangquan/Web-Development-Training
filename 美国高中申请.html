@@ -62,24 +62,19 @@ $(function(){
 /* Top left text */
 .top-left {
     position: absolute;
-    top: 20px;
+    top: 16%;
     left: 10%;
 	right: 40%;
-	color: white;
+	color: black;
+	font-weight:bold;
 }
 </style>
 <div class="w3-display-container">
-<img src="images/高中生申请banner-1500x500.jpg" class="img-responsive" alt="美高" style="width: 100%; filter: brightness(50%)">
-	<div class="top-left" align="left">
-  		<h2>美国高中申请</h2>
-	  	<p>高中时期是形成人生观，价值观和世界观的重要时期</p>
-		<p>选择美高,四年的时间融入在美国当地文化和生活中</p>
-		<p>纽菲尔德为你打开常春藤大门，朝着提升自身综合素质的方向前进！</p>
-  		<br>
-		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-success" target="_blank">立即在线咨询</a> 
-  </div>
+<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" target="_blank">
+	<img src="images/高中生申请banner-1500x500_2.jpg" class="img-responsive" alt="美高" style="width: 100%;">
+</a> 
 	<div class="row" style="width: 80%; margin-left: 10%">
-	<h1></h1>	
+	<h1></h1>
 		<div class="col-sm-4 col-md-4 col-lg-4">
 			<div style="border-width:1px; padding:2%;margin: 5%; border-radius:0px; text-align: left; flex: 1">
 			  <img src="images/icon_professional.png" alt="" class="img-responsive" style="margin-left: auto; margin-right: auto">
@@ -102,7 +97,22 @@ $(function(){
 		  </div>
 		</div>
 	</div>
-	<div class="row" style="background-color: #f8f8f8; font-size: 1.2vw; line-height: 2">
+	
+	<style>
+	
+	.fit_people li{
+	background-color: #f8f8f8;
+	font-size: 1.2vw;
+	line-height: 2;
+	}
+		
+    @media screen and (max-width: 600px) {
+     	.fit_people li{
+			font-size: 3vw;
+		}
+    }
+	</style>
+	<div class="row fit_people">
 		<div class="col-sm-6 col-md-6 col-lg-6">
 			<div style="text-align: left; margin: 5%">
 			  <ul>
@@ -132,8 +142,19 @@ $(function(){
 <p style="color: gray">美国现有30000+所公立高中，10000+所私立高中。
   <br>
   美国高中有四年9-12年级，相当于国内的的初三到高三</p>
-<div class="row" style="font-size: 1vw; line-height: 2">
-		<div class="col-sm-6 col-md-6 col-lg-6">
+
+<style>
+	
+	/* 在手机里面不显示文字 */
+	@media screen and (max-width: 600px){
+		.school_system p{
+			display: none;
+				
+		}
+	}
+</style>
+<div class="row school_system" style="font-size: 1vw; line-height: 2">
+		<div class="col-sm-12 col-md-6 col-lg-6">
 			<div style="width: 80%; margin-left: auto;margin-right: auto">
 			<div style="text-align: left; width: 80%; margin-left: auto;margin-right: auto">
 				  <h2 align="center" style="color: #45ABC1">公立高中</h2>
@@ -145,7 +166,7 @@ $(function(){
 		    </div>
 			</div>
 	  </div>
-		<div class="col-sm-6 col-md-6 col-lg-6">
+		<div class="col-sm-12 col-md-6 col-lg-6">
 			<div style="width: 80%; margin-left: auto;margin-right: auto">
 			<div style="text-align: left; width: 80%; margin-left: auto;margin-right: auto">			  	<h2 align="center" style="color:#45abc1">私立高中</h2>
 				<p>
@@ -166,32 +187,47 @@ $(function(){
 			<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-success" target="_blank">立即在线咨询</a> 
 </div>
 <div class="text-center">
-	<hr>
-	<h2>美国高中申请时间表</h2>
-	<img src="images/highschool-timeline-banner01_01.jpg">
+	<img src="images/highschool-timeline-banner01_02.png" class="img-responsive">
 </div>
-	
-<div class="row" style="margin-top: 3%">
-	<div class="col-sm-6 col-lg-4">
+
+
+<style>
+	.contact input{
+		font-size: 1vw;
+	}
+	@media screen and (max-width:600px){
+		.contact input {
+			font-size: 5vw;	shi
+		}
+		
+		.col-lg-4 {
+			display: none;
+		}
+	}
+</style>
+<div class="row contact" style="margin-top: 3%">
+	<div class="col-sm-12 col-lg-4">
 		<div align="left" style="margin-left: 20%; padding:2%; border-radius:0px">
 		<h2 style="color: #44c477">招生官免费评估</h2>
 		<h3 style="color: #44c477">开启美国高中留学之旅</h3>
 		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-success" target="_blank">我要详细评估</a>
 		<br><br>
-		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-primary" target="_blank">在线咨询</a> 
+		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-primary" target="_blank">在线咨询</a>
 		</div>
 	</div>
-	<div class="col-sm-6 col-lg-8">
+	<div class="col-sm-12 col-lg-8">
 		<div align="left" style="margin-right: 20%; padding:2%; border-radius:0px">
 		<h2 style="color: #44c477">留下联系方式，立即开始咨询</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
     		<form action="email.php" method="post" target="hidden-form" style="margin-top: 5%;margin-bottom: 2%">
-		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
-        		<input id="email"  name="email" placeholder="email(必填)" type="email" style="font-size: 1vw" required>
-		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" style="font-size: 1vw" required>
-		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
+		        <input id="firstname" name="firstname" placeholder="姓名" type="text">
+        		<input id="email"  name="email" placeholder="email(必填)" type="email" required>
+		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" required>
+		        <input id="wechat" name="wechat" placeholder="微信" type="tel">
         		<br><br>
-        		<input type="submit" value="发送" class="btn-success">
+        		<div style="text-align: center">
+        			<input type="submit" value="发送" class="btn-success">
+				</div>
 				<iframe style="display:block; border:none; height: 30px" name="hidden-form">Thank you! We will contact you soon!</iframe> 
 		  </form>
 	  </div>

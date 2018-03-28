@@ -65,6 +65,24 @@ $(function(){
 	right: 40%;
 	color: white;
 }
+	
+@media screen and (max-width: 600px) {
+	.top-left {
+		position: absolute;
+		top: 6px;
+		left: 10%;
+		right: 40%;
+		color: white;
+	}
+
+	.top-left h1 {
+		font-size: 5.5vw;
+	}
+	
+	.top-left h3{
+		display: none;
+	}
+}
 </style>
 <div class="w3-display-container">
 <img src="images/高中生申请banner-1500x500.jpg" class="img-responsive" alt="美高" style="width: 100%; filter: brightness(50%)">
@@ -74,8 +92,8 @@ $(function(){
 		<h3>纽菲尔德学术急救中心，最快<strong style="color: greenyellow">3天化险为夷</strong>！</h3>
   		<br>
 		<a href="https://www.formilla.com/chat.aspx?guid=cs0047ed-4c37-45c9-a962-907281b89d07" class="btn btn-defaul btn-danger" target="_blank">立即在线咨询</a> 
-  </div>
-	<div class="row" style="padding-top: 4%">
+  	</div>
+	<div class="row" style="padding-top: 4%; width: 80%; margin-left: auto; margin-right: auto">
 		<h2>被学校开除，怎么办？</h2>
 		<p style="color: gray">人生总有意外，无论什么原因被学校警告/查看/停学/开除，不要放弃希望
   		<br>
@@ -122,8 +140,20 @@ $(function(){
 	</div>
 </div>
 
+<style>
+	
+	.col-sm-12.col-lg-7 input{
+		font-size: 1vw;
+	}
+	
+	@media screen and (max-width: 600px){
+		.col-sm-12.col-lg-7 input{
+			font-size: 4vw;
+		}
+	}
+</style>
 <div class="row" style="margin-top: 5%; border-width:2px; border-color:#d9534f; border-style:dashed">
-	<div class="col-sm-6 col-lg-5" style="color: #d9534f">
+	<div class="col-sm-12 col-lg-5" style="color: #d9534f">
 		<div align="left" style="margin-left: 20%; padding:2%; border-radius:0px">
 		<h2 >缺课旷课/成绩不理想</h2>
 		<h2 >冒名顶替/学术不端</h2>
@@ -131,15 +161,15 @@ $(function(){
 		<h4> 紧急处理中心, 火速应对危机！</h4>
 		</div>
 	</div>
-	<div class="col-sm-6 col-lg-7">
+	<div class="col-sm-12 col-lg-7">
 		<div align="left" style="margin-right: 20%; padding:2%; border-radius:0px">
 		<h2 style="color: #d9534f">留下联系方式，立即开始咨询</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
     		<form action="email.php" method="post" target="hidden-form" style="margin-top: 5%;margin-bottom: 2%">
-		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
-        		<input id="email"  name="email" placeholder="email(必填)" type="email" style="font-size: 1vw" required>
-		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" style="font-size: 1vw" required>
-		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
+		        <input id="firstname" name="firstname" placeholder="姓名" type="text">
+        		<input id="email"  name="email" placeholder="email(必填)" type="email" required>
+		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" required>
+		        <input id="wechat" name="wechat" placeholder="微信" type="tel">
         		<br><br>
         		<input type="submit" value="发送" class="btn-danger">
 				<iframe style="display:block; border:none; height: 30px" name="hidden-form">Thank you! We will contact you soon!</iframe> 
@@ -163,6 +193,12 @@ $(function(){
 			margin-right: auto; 
 			height: 2px; 
 			background-color: black;
+		}
+		
+		@media screen and (max-width: 600px){
+			.warnings p {
+				font-size: 4vw;
+			}
 		}
 	</style>
 <div class="text-center" style="margin-top: 5%">
@@ -240,6 +276,21 @@ $(function(){
 .tabcontent li{
 	margin: 5px 0;
 }
+	
+@media screen and (max-width:600px){
+	.tab button {
+		font-size: 5vw;
+	}
+	
+	.tabcontent {
+		display: none;
+		width: 70%; 
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 3vw;
+	}
+}	
+	
 </style>
 <div class="text-center" style="margin-top: 5%">
 <h2>学术紧急情况，我们保驾护航</h2>
@@ -263,7 +314,7 @@ $(function(){
 	<li>最大程度减轻开除/退学/警告处分</li>  
   </ul>
   </th>
-  <th width="50%">  <img src="images/appealLetterService-min.jpg"></th>
+  <th width="50%">  <img src="images/appealLetterService-min.jpg" class="img-responsive"></th>
   </table>
 </div>
 <div id="Anchor" class="tabcontent">
@@ -278,7 +329,7 @@ $(function(){
 	<li>本科7个工作日内保证录取</li>  
   </ul>
   </th>
-  <th width="50%"><img src="images/emergencyservices-min.jpg"></th>
+  <th width="50%"><img src="images/emergencyservices-min.jpg" class="img-responsive"></th>
   </table>
 </div>
 <div id="Status" class="tabcontent">
@@ -293,7 +344,7 @@ $(function(){
 	<li>深谙如何与移民局沟通，经验丰富</li>
 	</ul>
 </th>
-<th width="50%"><img src="images/status1-1-min.jpg"></th>
+<th width="50%"><img src="images/status1-1-min.jpg" class="img-responsive"></th>
 </table>
 </div>
 <div id="Transfer" class="tabcontent">
@@ -308,7 +359,7 @@ $(function(){
 	<li>从哪里跌倒，就从哪里站起来！</li>
 	</ul>
   </th>
-  <th width="50%"><img src="images/transferservice-min.jpg">
+  <th width="50%"><img src="images/transferservice-min.jpg" class="img-responsive">
   </th>
 </table>
 </div>
@@ -324,7 +375,7 @@ $(function(){
  	<li>最长逾期滞留25个月 – 成功获签</li>
 	</ul>
    </th>
-   <th width="50%"><img src="images/visa1-1-min.jpg">
+   <th width="50%"><img src="images/visa1-1-min.jpg" class="img-responsive">
   </th>
 </table>
 </div>
@@ -353,8 +404,13 @@ document.getElementById("defaultOpen").click();
 		margin-top: 2%;
 	}
 
+	@media screen and (max-width: 600px){
+		.text-center.no-mobile {
+			display: none;	
+		}
+	}
 </style>
-<div class="text-center" style="margin-top: 5%; background-color: #eee">
+<div class="text-center no-mobile" style="margin-top: 5%; background-color: #eee">
 <h2>学术紧急处理 服务流程</h2>
 <p style="color: gray">纽菲尔德专家团第一时间为你免费咨询，全力策划，渡过难关，重返校园！</p>
 <hr style="width: 20%; margin-left: auto; margin-right: auto; height: 2px; background-color: #9DB7FF">
@@ -392,7 +448,7 @@ document.getElementById("defaultOpen").click();
 </div>
 </div>
 <div class="text-center">
-	<img src="images/紧急服务流程图.png" alt="紧急服务流程图" style="margin-top: 2%" >
+	<img src="images/紧急服务流程图.png" alt="紧急服务流程图" class="img-responsive" style="margin-top: 2%" >
 </div>
 <div id="footer"></div>	
 </body>

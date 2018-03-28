@@ -146,10 +146,25 @@ $(function(){
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 	}
+		
+@media screen and (max-width: 600px){
+	.collapsible {
+	  font-size: 4vw;
+	}
+	
+	.collapsible:after {
+		content: ""; /* Unicode character for "plus" sign (+) */
+		font-size: 4vw;
+	}
+
+	.active:after {
+		content: ""; /* Unicode character for "minus" sign (-) */
+	}
+}
 </style>
 	<div class="row">
 	<h2 style="text-align: center; margin-top: 5%; margin-bottom: 2%">常见问题</h2>
-	<div class="col-xs-6 col-lg-6 ui-content" data-role="main">
+	<div class="col-xs-12 col-lg-6 ui-content" data-role="main">
 		<div style="margin-left:5%">
 		<button class="collapsible">高中生被开除后能选择挂靠学校吗？</button>
 		<div class="content">
@@ -165,7 +180,7 @@ $(function(){
 		</div>
 		</div>
 	</div>
-	<div class="col-xs-6 col-lg-6 ui-content" data-role="main">
+	<div class="col-xs-12 col-lg-6 ui-content" data-role="main">
 		<div style="margin-left:5%">
 		<button class="collapsible">高中生通常是因为什么愿意被开除呢？</button>
 		<div class="content">
@@ -205,6 +220,24 @@ for (i = 0; i < coll.length; i++) {
 	</script>
 	<!-- 下拉菜单结束 -->
 	
+<style>
+	.col-sm-6.col-lg-8 input{
+			font-size: 1vw;
+	}
+	
+	@media screen and (max-width: 600px){
+		.col-sm-6.col-lg-4 {
+			display: none;
+		}
+		
+		.col-sm-6.col-lg-8 input{
+			font-size: 4vw;
+		}
+		
+	}
+	
+	
+</style>
 <div class="row" style="margin-top: 3%">
 	<div class="col-sm-6 col-lg-4">
 		<div align="left" style="margin-left: 20%; padding:2%; border-radius:0px">
@@ -220,10 +253,10 @@ for (i = 0; i < coll.length; i++) {
 		<h2 style="color: #44c477">留下联系方式，立即开始咨询</h2>
 			<!-- Contact Form - sent to a Google Sheet -->
     		<form action="email.php" method="post" target="hidden-form" style="margin-top: 5%;margin-bottom: 2%">
-		        <input id="firstname" name="firstname" placeholder="姓名" type="text" style="font-size: 1vw">
-        		<input id="email"  name="email" placeholder="email(必填)" type="email" style="font-size: 1vw" required>
-		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" style="font-size: 1vw" required>
-		        <input id="wechat" name="wechat" placeholder="微信" type="tel" style="font-size: 1vw">
+		        <input id="firstname" name="firstname" placeholder="姓名" type="text">
+        		<input id="email"  name="email" placeholder="email(必填)" type="email" required>
+		        <input id="phone"  name="phone" placeholder="美国电话(必填)" type="tel" pattern="^\d{3}-{0,1}\d{3}-{0,1}\d{4}$" required>
+		        <input id="wechat" name="wechat" placeholder="微信" type="tel">
         		<br><br>
         		<input type="submit" value="发送" class="btn-success">
 				<iframe style="display:block; border:none; height: 30px" name="hidden-form">Thank you! We will contact you soon!</iframe> 
